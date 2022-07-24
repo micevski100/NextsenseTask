@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5338727FDA592F760A69CBDE /* Pods_NextsenseTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FA3D273F4CC054CF3A2813 /* Pods_NextsenseTask.framework */; };
+		EE095EF6288C843A000CCB0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095EF5288C843A000CCB0F /* AppDelegate.swift */; };
+		EE095EF8288C843A000CCB0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095EF7288C843A000CCB0F /* SceneDelegate.swift */; };
+		EE095EFD288C843A000CCB0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE095EFB288C843A000CCB0F /* Main.storyboard */; };
+		EE095F00288C843A000CCB0F /* NextsenseTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE095EFE288C843A000CCB0F /* NextsenseTask.xcdatamodeld */; };
+		EE095F02288C843B000CCB0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE095F01288C843B000CCB0F /* Assets.xcassets */; };
+		EE095F05288C843B000CCB0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE095F03288C843B000CCB0F /* LaunchScreen.storyboard */; };
+		EE095F14288C84C4000CCB0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095F13288C84C3000CCB0F /* MainViewController.swift */; };
+		EE095F18288C85CC000CCB0F /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095F17288C85CC000CCB0F /* CurrentWeatherView.swift */; };
+		EE095F1A288C8709000CCB0F /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095F19288C8709000CCB0F /* ForecastTableViewCell.swift */; };
+		EE095F1C288C883C000CCB0F /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095F1B288C883C000CCB0F /* ForecastResponse.swift */; };
+		EE095F1E288C88C3000CCB0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095F1D288C88C3000CCB0F /* Constants.swift */; };
+		EE095F20288C88DA000CCB0F /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095F1F288C88DA000CCB0F /* ApiManager.swift */; };
+		EE095F22288C8ABB000CCB0F /* CityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095F21288C8ABB000CCB0F /* CityResponse.swift */; };
+		EE095F24288C94BD000CCB0F /* CurrentWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095F23288C94BD000CCB0F /* CurrentWeatherResponse.swift */; };
+		EE095F27288C9C5D000CCB0F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE095F26288C9C5D000CCB0F /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79783C0C309E32092FA45463 /* Pods-NextsenseTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextsenseTask.debug.xcconfig"; path = "Target Support Files/Pods-NextsenseTask/Pods-NextsenseTask.debug.xcconfig"; sourceTree = "<group>"; };
+		86F56178556DD538EB100796 /* Pods-NextsenseTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextsenseTask.release.xcconfig"; path = "Target Support Files/Pods-NextsenseTask/Pods-NextsenseTask.release.xcconfig"; sourceTree = "<group>"; };
+		91FA3D273F4CC054CF3A2813 /* Pods_NextsenseTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextsenseTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE095EF2288C843A000CCB0F /* NextsenseTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextsenseTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE095EF5288C843A000CCB0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE095EF7288C843A000CCB0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE095EFC288C843A000CCB0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE095EFF288C843A000CCB0F /* NextsenseTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NextsenseTask.xcdatamodel; sourceTree = "<group>"; };
+		EE095F01288C843B000CCB0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE095F04288C843B000CCB0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE095F06288C843B000CCB0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE095F13288C84C3000CCB0F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EE095F17288C85CC000CCB0F /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
+		EE095F19288C8709000CCB0F /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		EE095F1B288C883C000CCB0F /* ForecastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
+		EE095F1D288C88C3000CCB0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE095F1F288C88DA000CCB0F /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		EE095F21288C8ABB000CCB0F /* CityResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityResponse.swift; sourceTree = "<group>"; };
+		EE095F23288C94BD000CCB0F /* CurrentWeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherResponse.swift; sourceTree = "<group>"; };
+		EE095F26288C9C5D000CCB0F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE095EEF288C843A000CCB0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5338727FDA592F760A69CBDE /* Pods_NextsenseTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		310D70A7AF14522F9A625508 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79783C0C309E32092FA45463 /* Pods-NextsenseTask.debug.xcconfig */,
+				86F56178556DD538EB100796 /* Pods-NextsenseTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		93E3470C17B1D5C807587DCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91FA3D273F4CC054CF3A2813 /* Pods_NextsenseTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE095EE9288C843A000CCB0F = {
+			isa = PBXGroup;
+			children = (
+				EE095EF4288C843A000CCB0F /* NextsenseTask */,
+				EE095EF3288C843A000CCB0F /* Products */,
+				310D70A7AF14522F9A625508 /* Pods */,
+				93E3470C17B1D5C807587DCD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE095EF3288C843A000CCB0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE095EF2288C843A000CCB0F /* NextsenseTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE095EF4288C843A000CCB0F /* NextsenseTask */ = {
+			isa = PBXGroup;
+			children = (
+				EE095EF5288C843A000CCB0F /* AppDelegate.swift */,
+				EE095EF7288C843A000CCB0F /* SceneDelegate.swift */,
+				EE095F25288C9C51000CCB0F /* Utilities */,
+				EE095F11288C849E000CCB0F /* Network */,
+				EE095F0F288C848A000CCB0F /* Models */,
+				EE095F0E288C8486000CCB0F /* Views */,
+				EE095F0D288C847F000CCB0F /* Controllers */,
+				EE095F0C288C846F000CCB0F /* Supporting Files */,
+				EE095F06288C843B000CCB0F /* Info.plist */,
+				EE095EFE288C843A000CCB0F /* NextsenseTask.xcdatamodeld */,
+			);
+			path = NextsenseTask;
+			sourceTree = "<group>";
+		};
+		EE095F0C288C846F000CCB0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE095EFB288C843A000CCB0F /* Main.storyboard */,
+				EE095F03288C843B000CCB0F /* LaunchScreen.storyboard */,
+				EE095F01288C843B000CCB0F /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE095F0D288C847F000CCB0F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE095F12288C84B1000CCB0F /* MainScene */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EE095F0E288C8486000CCB0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE095F0F288C848A000CCB0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE095F1B288C883C000CCB0F /* ForecastResponse.swift */,
+				EE095F21288C8ABB000CCB0F /* CityResponse.swift */,
+				EE095F23288C94BD000CCB0F /* CurrentWeatherResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE095F11288C849E000CCB0F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EE095F1D288C88C3000CCB0F /* Constants.swift */,
+				EE095F1F288C88DA000CCB0F /* ApiManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EE095F12288C84B1000CCB0F /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				EE095F16288C85A9000CCB0F /* Views */,
+				EE095F13288C84C3000CCB0F /* MainViewController.swift */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		EE095F15288C85A4000CCB0F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EE095F19288C8709000CCB0F /* ForecastTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EE095F16288C85A9000CCB0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE095F15288C85A4000CCB0F /* Cells */,
+				EE095F17288C85CC000CCB0F /* CurrentWeatherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE095F25288C9C51000CCB0F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE095F26288C9C5D000CCB0F /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE095EF1288C843A000CCB0F /* NextsenseTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE095F09288C843B000CCB0F /* Build configuration list for PBXNativeTarget "NextsenseTask" */;
+			buildPhases = (
+				71716A0150AD42AD3B32BD66 /* [CP] Check Pods Manifest.lock */,
+				EE095EEE288C843A000CCB0F /* Sources */,
+				EE095EEF288C843A000CCB0F /* Frameworks */,
+				EE095EF0288C843A000CCB0F /* Resources */,
+				0BF53D34E22C20AE752B20F8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NextsenseTask;
+			productName = NextsenseTask;
+			productReference = EE095EF2288C843A000CCB0F /* NextsenseTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE095EEA288C843A000CCB0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EE095EF1288C843A000CCB0F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EE095EED288C843A000CCB0F /* Build configuration list for PBXProject "NextsenseTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE095EE9288C843A000CCB0F;
+			productRefGroup = EE095EF3288C843A000CCB0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE095EF1288C843A000CCB0F /* NextsenseTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE095EF0288C843A000CCB0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE095F05288C843B000CCB0F /* LaunchScreen.storyboard in Resources */,
+				EE095F02288C843B000CCB0F /* Assets.xcassets in Resources */,
+				EE095EFD288C843A000CCB0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BF53D34E22C20AE752B20F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NextsenseTask/Pods-NextsenseTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NextsenseTask/Pods-NextsenseTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NextsenseTask/Pods-NextsenseTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71716A0150AD42AD3B32BD66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NextsenseTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE095EEE288C843A000CCB0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE095F1A288C8709000CCB0F /* ForecastTableViewCell.swift in Sources */,
+				EE095F20288C88DA000CCB0F /* ApiManager.swift in Sources */,
+				EE095EF6288C843A000CCB0F /* AppDelegate.swift in Sources */,
+				EE095F00288C843A000CCB0F /* NextsenseTask.xcdatamodeld in Sources */,
+				EE095EF8288C843A000CCB0F /* SceneDelegate.swift in Sources */,
+				EE095F22288C8ABB000CCB0F /* CityResponse.swift in Sources */,
+				EE095F18288C85CC000CCB0F /* CurrentWeatherView.swift in Sources */,
+				EE095F27288C9C5D000CCB0F /* Extensions.swift in Sources */,
+				EE095F1C288C883C000CCB0F /* ForecastResponse.swift in Sources */,
+				EE095F24288C94BD000CCB0F /* CurrentWeatherResponse.swift in Sources */,
+				EE095F14288C84C4000CCB0F /* MainViewController.swift in Sources */,
+				EE095F1E288C88C3000CCB0F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE095EFB288C843A000CCB0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE095EFC288C843A000CCB0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE095F03288C843B000CCB0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE095F04288C843B000CCB0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE095F07288C843B000CCB0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE095F08288C843B000CCB0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE095F0A288C843B000CCB0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79783C0C309E32092FA45463 /* Pods-NextsenseTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JP45R35RWN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NextsenseTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sq.NextsenseTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE095F0B288C843B000CCB0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F56178556DD538EB100796 /* Pods-NextsenseTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JP45R35RWN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NextsenseTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sq.NextsenseTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE095EED288C843A000CCB0F /* Build configuration list for PBXProject "NextsenseTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE095F07288C843B000CCB0F /* Debug */,
+				EE095F08288C843B000CCB0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE095F09288C843B000CCB0F /* Build configuration list for PBXNativeTarget "NextsenseTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE095F0A288C843B000CCB0F /* Debug */,
+				EE095F0B288C843B000CCB0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE095EFE288C843A000CCB0F /* NextsenseTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE095EFF288C843A000CCB0F /* NextsenseTask.xcdatamodel */,
+			);
+			currentVersion = EE095EFF288C843A000CCB0F /* NextsenseTask.xcdatamodel */;
+			path = NextsenseTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE095EEA288C843A000CCB0F /* Project object */;
+}
